@@ -1,0 +1,27 @@
+.banner{
+    height:500px;
+    background-size: center cover;
+}
+
+@media (min-width: 640px){
+.banner{
+    height:400px;
+}
+}
+
+@media (min-width: 1024px){
+    .banner{
+        height:500px;
+    }
+}
+
+  @media (min-width: 1280px){
+    .banner{
+        height:600px;
+    }
+} 
+ @media (min-width: 1536px){
+    .banner{
+        height:700px;
+    }
+}  
