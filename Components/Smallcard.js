@@ -2,7 +2,7 @@ import Image from "next/image"
 
 function Smallcard({img,distance,location}) {
     return (
-        <div className="flex space-x-4 m-2 mt-5 rounded-xl cursor-pointer hover:bg-gray-100
+        <div className="flex space-x-4 m-2 mt-5   rounded-lg cursor-pointer hover:bg-gray-100
       hover:scale-105 transition transform duration-200 ease-out">
             {/* left */}
             <div className="relative h-16 w-16">

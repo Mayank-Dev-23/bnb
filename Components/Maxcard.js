@@ -12,7 +12,7 @@ function Maxcard({img,title,description,buttontext}) {
             />
         </div>
 
-        <div className="absolute top-32 left-12">
+        <div className="absolute top-32 left-12 ">
             <h3 className="font-semibold text-4xl mb-3 w-64">{title}</h3>
             <p>{description}</p>
 

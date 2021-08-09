@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { useEffect, useState } from 'react'
+
 import Banner from '../Components/Banner'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
@@ -10,24 +10,6 @@ import Smallcard from '../Components/Smallcard'
 export default function Home({exploredata,carddata}) {
   
 
-  const[nav,Setnav]=useState(false);
-  const [change,Setchange]=useState(false);
-
-
-useEffect(()=>{
-  const change=()=>{
-    if(window.scrollY>=200){
-      Setnav(true)
-      Setchange(true)
-    }
-    else{
-      Setnav(false)
-      Setchange(false)
-    }
-  }
-  window.addEventListener("scroll", change)
-  
-})
 
 
   
@@ -39,7 +21,7 @@ useEffect(()=>{
       </Head>
 
 
-      <Header nav={nav} change={change} />
+      <Header  />
       <Banner />
 
       <main className="max-w-6xl mx-auto px-8 sm:px-16 shadow-">
