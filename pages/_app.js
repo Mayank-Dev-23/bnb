@@ -1,20 +1,24 @@
 import 'tailwindcss/tailwind.css'
 import "../public/styles/index.css"
-import ProgressBar from "@badrap/bar-of-progress";
-import {Router} from "next/router"
+
+import {Router} from "next/router";
+  
+import "nprogress/nprogress.css";
+import NProgress from "nprogress";
+NProgress.configure({ showSpinner: false,
+ 
+ });
+Router.events.on("routeChangeStart", () => NProgress.start());
+Router.events.on("routeChangeComplete", () => NProgress.done());
+Router.events.on("routeChangeError", () => NProgress.done());
 
 
 
-const progress = new ProgressBar({
-  size: 4,
-  color:"#FE595E",
-  className:"z-50",
-  delay:  100,
-});
 
-Router.events.on("routeChangeStart" , progress.start);
-Router.events.on("routerChangeComplete", progress.finish);
-Router.events.on("routerChangeError", progress.finish);
+
+
+
+
 
 function MyApp({ Component, pageProps }) {
 

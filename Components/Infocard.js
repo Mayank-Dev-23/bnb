@@ -1,4 +1,5 @@
-import { HeartIcon, StarIcon } from "@heroicons/react/solid";
+import {  HeartIcon ,StarIcon } from "@heroicons/react/solid";
+
 import Image from "next/image";
 import { useState } from "react";
 
@@ -28,7 +29,7 @@ function Infocard({ img, description, location, title,star,price,total,long,lat,
        <p className="text-gray-500">{location}</p>
        <HeartIcon
        onClick={liked}
-       className={like ? "h-6 text-red-500" :"h-6  cursor-pointer"}/>
+       className={like ? "h-6  text-red-500 cursor-pointer" :"h-6  cursor-pointer"}/>
    </div>
    <h2 className="text-xl">{title}</h2>
   

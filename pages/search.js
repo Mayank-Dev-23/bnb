@@ -30,10 +30,10 @@ function search({data}) {
                 </title> 
             </Head>
             
-            <div className="px-4 pt-2 ">
+            <div className="px-4 pt-2  ">
                 <ArrowLeftIcon 
                 onClick={()=>router.push("/")}
-                className="h-10 bg-gray-200 cursor-pointer rounded-full hover:bg-gray-300 p-1"/>
+                className="h-10 bg-gray-200   cursor-pointer rounded-full hover:bg-gray-300 p-1"/>
             </div>
             
           
