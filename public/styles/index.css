@@ -1,7 +1,9 @@
 
 html{
     overflow-x: hidden;
+   
 }
+
 
 .banner{
     height:500px;
@@ -34,11 +36,25 @@ html{
 .picker{
     background-color: white;
     width:340px;
-    transition:all 0.10s ease-in-out;
+    animation-name:picker;
+    animation-duration: 0.5s;
+ 
+
     
     
 }
 
+@keyframes picker{
+    0%{opacity: 0;}
+    25%{opacity:79%;}
+    100%{opacity:100%;}
+
+
+
+    0%{position:relative; top: -40px;}
+    100%{position:relative;  top:0px;}
+
+}
 
 
 @media screen and  (min-width: 640px) {
@@ -59,4 +75,10 @@ html{
 
   .nav{
       transition:all 0.6s ease-in-out;
+  }
+
+  .map{
+      height:600px;
+      width:100%;
+     
   }

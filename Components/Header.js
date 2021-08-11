@@ -48,6 +48,9 @@ function Header() {
       }
 
     })
+    setTimeout(() => {
+      Setinputtext("");
+    }, 100);
   }
 
   return (
@@ -113,6 +116,7 @@ function Header() {
         inputtext={inputtext}
         Setinputtext={Setinputtext}
         search={search}
+        
           />
 
           

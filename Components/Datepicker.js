@@ -38,7 +38,7 @@ endDate.setValue(ranges.selection.endDate);
     }
 
     return (
-        <div>
+        <div className="">
 {smallscreen ? (<DateRange  {...options} />) :
  (<DateRangePicker {...options} />)}
 
