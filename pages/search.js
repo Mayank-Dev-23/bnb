@@ -37,7 +37,9 @@ function search({data}) {
           
     
             <section className=" map   ">
-                <Map calssName="rounded-lg" />
+                <Map 
+                data={data}
+                calssName="rounded-lg" />
 
                 <div className="px-4 pt-2  flex  absolute top-0 ">
                 <ArrowLeftIcon 
